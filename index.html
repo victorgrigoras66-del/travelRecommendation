@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelRecommendation</title>
+    <link rel="stylesheet" href="stil.css">
+  
+</head>
+<body>
+
+    <nav  class="navbar" >
+        <!-- Elemente de meniu din stânga -->
+        <img src="zambet.jpg" alt="Logo" style="height: 40px; margin-right: 15px;">
+        <span style="margin-right: 15px;">TravelBloom</span>
+        <div class="linkuri">
+            <a href="index.html">Home</a>
+            <a href="About Us.html">About Us</a>
+            <a href="Contact Us.html">Contact Us</a>
+        </div>
+        
+        <!-- Bara de căutare în partea dreaptă -->
+        <form  id="formcautare" class="cautare" action="/search" method="GET" style="float: right;">
+          <input id="cauttext" type="search" name="q" placeholder="Caută..." style="padding: 5px;">
+          <img src="lupa.png" alt="Logo" style="height: 40px; margin-right: 15px;">
+          <button id="butoncautare" type="submit" style="margin-left: 5px; background-color: green; color:white">Caută</button>
+          <button id="butonstergere"  onclick="sterge()" type="Clear" style="margin-left: 5px; background-color: green; color:white">Clear</button>
+        </form>
+    </nav>
+      <main class="hero">
+         <div class="container" >
+                <div id="explore">
+                   <h2>EXPLORE DREAM</h2>
+                    <h2>DESTINATION</h2>
+                </div>
+                <div id="reclama" >
+                    <p> acesta este un site in care aveti <br>
+                        la dispozitie informatii de ultima ora<br>
+                        despre cele mai cool destinatii de calatorie<br>
+                        la preturi imbatabile.Compania noastra ofera <br>
+                        servicii premium la preturi convenabile.
+                 </div>
+         </div>
+         
+            <!--
+         </div>
+            <div id="toate">
+                <section id="sectiune" class="image-gallery">
+                    
+                </section>
+                <div id="numepoza">
+                </div>
+                <div id="descrierepoza">
+                </div>
+
+
+            </div>    
+            -->   
+            <div class="cards-container" id="cardsContainer"></div>
+        </main>
+
+        <script src="./travel_recommendation.js"></script>
+</body>
+</html>
